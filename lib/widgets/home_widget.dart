@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_resume/modules/form/ui/mobile/mobile_view.dart';
+import 'package:responsive_resume/views/mobile_view.dart';
 import 'package:responsive_resume/views/desktop_view.dart';
 
 class HomeWidget extends StatelessWidget {

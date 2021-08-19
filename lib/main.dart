@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:sizer/sizer.dart' as sizer;
-
-import 'config/routes/routes_handler.dart';
 import 'widgets/home_widget.dart';
 
 void main() {
@@ -22,11 +20,9 @@ class MyApp extends StatelessWidget {
         title: 'Responsive Resume Builder for HNG',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          brightness: Brightness.light, //TODO: change to dark 
+          brightness: Brightness.light, 
           primarySwatch: Colors.blue,
         ),
-        onGenerateRoute: (settings) => CupertinoPageRoute(
-            builder: (_) => routes[settings.name]!, settings: settings),
         home: HomeWidget()
       ),
     );
