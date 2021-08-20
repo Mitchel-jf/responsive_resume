@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         title: 'Responsive Resume Builder for HNG',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          canvasColor: Colors.white,
           brightness: Brightness.light, 
           primarySwatch: Colors.blue,
         ),

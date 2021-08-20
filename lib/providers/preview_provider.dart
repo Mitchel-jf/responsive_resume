@@ -6,9 +6,11 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:screenshot/screenshot.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final previewProvider = PreviewProvider();
 final pp = ChangeNotifierProvider((ref) => PreviewProvider());
+
 class PreviewProvider extends ChangeNotifier {
   // bio
   final nameCtrl = ChangeNotifierProvider((ref) => TextEditingController());
@@ -42,5 +44,10 @@ class PreviewProvider extends ChangeNotifier {
       anchor.click();
       anchor.remove();
     });
+  }
+
+  void openZuriWebsite() async {
+    String url = 'https://internship.zuri.team/';
+    if (await canLaunch(url)) await launch(url);
   }
 }

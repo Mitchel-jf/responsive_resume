@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_resume/providers/preview_provider.dart';
-import 'package:responsive_resume/widgets/preview/awards_widget.dart';
+import 'package:responsive_resume/widgets/preview/powered_by_widget.dart';
 import 'package:responsive_resume/widgets/preview/bio_widget.dart';
 import 'package:responsive_resume/widgets/preview/education_widget.dart';
 import 'package:responsive_resume/widgets/preview/experience_widget.dart';
